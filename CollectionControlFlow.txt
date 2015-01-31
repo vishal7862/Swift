@@ -1,0 +1,56 @@
+var collection=["apple","banana","mango"];
+
+for (index,item) in enumerate(collection){
+    
+ println("Item \(index + 1):\(item)")
+    
+}
+
+//this is for default array
+var collection1=Array<Double>(count:3,repeatedValue:0.2);
+
+println(collection1)
+
+
+// for Dictionary
+var dictionary:[String:String];
+dictionary=["Fruit1":"apple","Fruit2":"mango","Fruit3":"orange"]
+dictionary.updateValue("Chiku",forKey:"Fruit1")
+dictionary.removeValueForKey("Fruit1")
+println(dictionary["Fruit1"])
+
+//iterating over dictionary
+for (key,value) in dictionary{
+    println("key:\(key) value:\(value)")
+}
+
+dictionary=[:]
+println("after nullifying Dictionary: \(dictionary.count)")
+
+
+
+//for nil understanding
+var a : Int? = "123x".toInt()
+println(a)
+
+var x : Int! 
+x = 5
+println(x)
+
+//checking unary
+var board=[Int]();
+
+board.append(3)
+board[0] = +02;
+println(board[0]);
+
+//function
+func sayHelloAgain(personName: String) -> String {
+return "Hello, " + personName + "!"
+}
+
+var person:String;
+person="Raj";
+var personHold=sayHelloAgain(person);
+println("\(personHold)")
+
